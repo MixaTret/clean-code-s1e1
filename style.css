@@ -39,7 +39,7 @@ button {
 .main-content {
   display: block;
   width: 500px;
-  margin: 0 auto 0;
+  margin: 16px auto 0;
 }
 
 .task-input {
@@ -50,7 +50,7 @@ button {
 
 .task-row-wrapper {
   display: flex;
-  margin-top: 20px;
+  margin: 20px 0 16px;
 }
 
 .add-btn,
