@@ -1,15 +1,16 @@
 /* Basic Style */
-ul {
+.tasks-list {
   margin: 0;
   padding: 0px;
 }
 
-li,
-h3 {
+.tasks-list__item,
+.list-title {
   list-style: none;
 }
 
-input,
+.task-input,
+.check-task__input,
 button {
   outline: none;
 }
@@ -20,19 +21,19 @@ button {
   font-family: Lato, sans-serif;
 }
 
-.info-section-wrapper {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.info-section-img {
+.info-section__img {
   width: 100%;
   margin-bottom: -3px;
 }
 
-.more-info-link {
+.info-section__link {
   font-family: fantasy, cursive;
 }
 
@@ -42,6 +43,7 @@ button {
   margin: 16px auto 0;
 }
 
+.check-task__input,
 .task-input {
   width: 56%;
   display: inline-block;
@@ -104,7 +106,7 @@ button {
 }
 
 /* Task list */
-.tasks-list-item {
+.tasks-list__item {
   overflow: hidden;
   padding: 18.5px 0;
   border-bottom: 1px solid #eee;
@@ -113,7 +115,7 @@ button {
   align-items: center;
 }
 
-.check-input {
+.check__input {
   margin: 0 10px;
 }
 
@@ -139,7 +141,7 @@ button {
 }
 
 /* Completed */
-#completed-tasks-list .task-title {
+.completed-task {
   text-decoration: line-through;
   color: #888;
 }
@@ -159,7 +161,7 @@ button {
 }
 
 @media (max-width: 768px) {
-  .info-section-wrapper {
+  .header {
     text-align: center;
   }
 }
